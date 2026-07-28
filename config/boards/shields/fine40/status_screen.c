@@ -10,9 +10,9 @@ static struct zmk_widget_battery_status battery_status_widget;
 lv_obj_t *zmk_display_status_screen() {
     lv_obj_t *screen = lv_obj_create(NULL);
 
-    lv_obj_set_flex_flow(screen, LV_FLEX_FLOW_COLUMN);
+    lv_obj_set_flex_flow(screen, LV_FLEX_FLOW_ROW);
     lv_obj_set_flex_align(screen, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER);
-    lv_obj_set_style_pad_row(screen, 8, 0);
+    lv_obj_set_style_pad_collum(screen, 8, 0);
     lv_obj_set_style_bg_opa(screen, LV_OPA_COVER, 0);
     lv_obj_set_style_bg_color(screen, lv_color_black(), 0);
 
