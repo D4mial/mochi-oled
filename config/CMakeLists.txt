@@ -1,0 +1,5 @@
+if(CONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM)
+    target_sources(app PRIVATE boards/shields/fine40/status_screen.c)
+    target_sources(app PRIVATE boards/shields/fine40/widgets/output_status.c)
+    target_sources(app PRIVATE boards/shields/fine40/widgets/battery_status.c)
+endif()
