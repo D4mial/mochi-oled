@@ -82,7 +82,6 @@ ZMK_SUBSCRIPTION(widget_output_status, zmk_ble_active_profile_changed);
 int zmk_widget_output_status_init(struct zmk_widget_output_status *widget, lv_obj_t *parent) {
     widget->obj = lv_label_create(parent);
 
-    lv_obj_set_style_text_font(widget->obj, &lv_font_montserrat_28, 0);
     lv_label_set_text(widget->obj, LV_SYMBOL_USB);
 
     sys_slist_append(&widgets, &widget->node);
